@@ -1,0 +1,19 @@
+{
+  "name": "pokemonapi",
+  "module": "index.ts",
+  "type": "module",
+ "scripts": { "lint": "biome lint ./src",
+  "format": "biome format ./src",
+  "test": "bun test",
+  "test:watch": "bun test --watch",
+  "test:coverage": "bun test --coverage"
+},
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
