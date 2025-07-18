@@ -45,7 +45,7 @@ export interface Pokemon {
     //a alist of items the pokemon may be holding  when encountered
     held_items: PokemonHeldItem[];
     // list of location areas, as well as encounter details pertaining to specific versions
-    location_area_encouters: string;
+    location_area_encounters: string;
     //  alist of moves as welll as learn methods and level details pertaining to specifi version groups
     moves: PokemonMove[];
     // a set of sprites to depict this pokemon in a game

@@ -18,6 +18,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "inversify": "^7.6.1",
     "pokenode-ts": "^1.20.0"
   }
 }

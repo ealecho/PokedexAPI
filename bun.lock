@@ -4,6 +4,7 @@
     "": {
       "name": "pokemonapi",
       "dependencies": {
+        "inversify": "^7.6.1",
         "pokenode-ts": "^1.20.0",
       },
       "devDependencies": {
@@ -33,6 +34,18 @@
     "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.1.1", "", { "os": "win32", "cpu": "arm64" }, "sha512-vEHK0v0oW+E6RUWLoxb2isI3rZo57OX9ZNyyGH701fZPj6Il0Rn1f5DMNyCmyflMwTnIQstEbs7n2BxYSqQx4Q=="],
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.1.1", "", { "os": "win32", "cpu": "x64" }, "sha512-i2PKdn70kY++KEF/zkQFvQfX1e8SkA8hq4BgC+yE9dZqyLzB/XStY2MvwI3qswlRgnGpgncgqe0QYKVS1blksg=="],
+
+    "@inversifyjs/common": ["@inversifyjs/common@1.5.2", "", {}, "sha512-WlzR9xGadABS9gtgZQ+luoZ8V6qm4Ii6RQfcfC9Ho2SOlE6ZuemFo7PKJvKI0ikm8cmKbU8hw5UK6E4qovH21w=="],
+
+    "@inversifyjs/container": ["@inversifyjs/container@1.11.1", "", { "dependencies": { "@inversifyjs/common": "1.5.2", "@inversifyjs/core": "5.4.0", "@inversifyjs/plugin": "0.2.0", "@inversifyjs/reflect-metadata-utils": "1.2.0" }, "peerDependencies": { "reflect-metadata": "~0.2.2" } }, "sha512-MhgriyCm/lihOoo/ydGyBwZsKT6bUGAqQ+JM2i5JGgINLJx2g7Unt4bK+cFepHBh+um0M34VlRZFczmsHJhTSw=="],
+
+    "@inversifyjs/core": ["@inversifyjs/core@5.4.0", "", { "dependencies": { "@inversifyjs/common": "1.5.2", "@inversifyjs/prototype-utils": "0.1.2", "@inversifyjs/reflect-metadata-utils": "1.2.0" } }, "sha512-ZQXfPvXmIlzWs/K8n8R5AFBHk55gV7xEjKtKv1dvS3K6f8wEVXeHij9Zh0tqp2pvEyiuxv0UHPBONpE84DuYcg=="],
+
+    "@inversifyjs/plugin": ["@inversifyjs/plugin@0.2.0", "", {}, "sha512-R/JAdkTSD819pV1zi0HP54mWHyX+H2m8SxldXRgPQarS3ySV4KPyRdosWcfB8Se0JJZWZLHYiUNiS6JvMWSPjw=="],
+
+    "@inversifyjs/prototype-utils": ["@inversifyjs/prototype-utils@0.1.2", "", { "dependencies": { "@inversifyjs/common": "1.5.2" } }, "sha512-WZAEycwVd8zVCPCQ7GRzuQmjYF7X5zbjI9cGigDbBoTHJ8y5US9om00IAp0RYislO+fYkMzgcB2SnlIVIzyESA=="],
+
+    "@inversifyjs/reflect-metadata-utils": ["@inversifyjs/reflect-metadata-utils@1.2.0", "", { "peerDependencies": { "reflect-metadata": "0.2.2" } }, "sha512-EvXdBP+IjAZ3QKWFWGDzWLacyng9RMohtZ0c0EPUmvbaF4wgfwrE6n92ilt9aGwdbE5roGmDTmoRSmvavVOtIA=="],
 
     "@types/bun": ["@types/bun@1.2.18", "", { "dependencies": { "bun-types": "1.2.18" } }, "sha512-Xf6RaWVheyemaThV0kUfaAUvCNokFr+bH8Jxp+tTZfx7dAPA8z9ePnP9S9+Vspzuxxx9JRAXhnyccRj3GyCMdQ=="],
 
@@ -88,6 +101,8 @@
 
     "hasown": ["hasown@2.0.2", "", { "dependencies": { "function-bind": "^1.1.2" } }, "sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ=="],
 
+    "inversify": ["inversify@7.6.1", "", { "dependencies": { "@inversifyjs/common": "1.5.2", "@inversifyjs/container": "1.11.1", "@inversifyjs/core": "5.4.0" }, "peerDependencies": { "reflect-metadata": "~0.2.2" } }, "sha512-a4bN7pjKP+h5ABNsf7vQNU0S5P/44RFqcUpFWXZLGEJuedF5ux3CvWGn2TfSbVbk3r7hNto6G3tR0j70nbFDKw=="],
+
     "math-intrinsics": ["math-intrinsics@1.1.0", "", {}, "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g=="],
 
     "mime-db": ["mime-db@1.52.0", "", {}, "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg=="],
@@ -99,6 +114,8 @@
     "pokenode-ts": ["pokenode-ts@1.20.0", "", { "peerDependencies": { "axios": "^1.4.0", "axios-cache-interceptor": "^1.2.0" } }, "sha512-6MekrbiQc9nmaZJ5xpyhRSEMFo4xEsMuB7RR3EqfPvuXo/3StnH1p4brfIiIWDCcZvu7t9a0vjodiR4TnRdLEw=="],
 
     "proxy-from-env": ["proxy-from-env@1.1.0", "", {}, "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg=="],
+
+    "reflect-metadata": ["reflect-metadata@0.2.2", "", {}, "sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q=="],
 
     "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
 
